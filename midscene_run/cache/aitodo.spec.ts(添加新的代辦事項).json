@@ -1,0 +1,55 @@
+{
+  "pkgName": "playwright-practice",
+  "pkgVersion": "1.0.0",
+  "cacheId": "aitodo.spec.ts(添加新的代辦事項)",
+  "aiTasks": [
+    {
+      "prompt": "在輸入框中輸入學習playwright並按下enter",
+      "tasks": [
+        {
+          "type": "plan",
+          "pageContext": {
+            "url": "https://demo.playwright.dev/todomvc/#/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "在輸入框中輸入學習playwright並按下enter",
+          "response": {
+            "actions": [
+              {
+                "type": "Input",
+                "thought": "輸入學習playwright",
+                "param": {
+                  "value": "學習playwright"
+                },
+                "locate": {
+                  "id": "jfhap",
+                  "prompt": "What needs to be done?"
+                }
+              },
+              {
+                "type": "KeyboardPress",
+                "thought": "按下enter",
+                "param": {
+                  "value": "Enter"
+                }
+              }
+            ],
+            "log": "在輸入框中輸入學習playwright並按下enter",
+            "error": null,
+            "more_actions_needed_by_instruction": false,
+            "rawResponse": "{\n  \"actions\": [\n    {\n      \"type\": \"Input\",\n      \"thought\": \"輸入學習playwright\",\n      \"param\": {\n        \"value\": \"學習playwright\"\n      },\n      \"locate\": {\n        \"id\": \"jfhap\",\n        \"prompt\": \"What needs to be done?\"\n      }\n    },\n    {\n      \"type\": \"KeyboardPress\",\n      \"thought\": \"按下enter\",\n      \"param\": {\n        \"value\": \"Enter\"\n      }\n    }\n  ],\n  \"log\": \"在輸入框中輸入學習playwright並按下enter\",\n  \"error\": null,\n  \"more_actions_needed_by_instruction\": false\n}",
+            "usage": {
+              "completion_tokens": 171,
+              "prompt_tokens": 4249,
+              "total_tokens": 4420
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
